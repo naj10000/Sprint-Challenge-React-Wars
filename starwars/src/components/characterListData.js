@@ -6,10 +6,10 @@ function CharacterData (){
     const [data , setData] = useState([])
     useEffect( () => {
       axios 
-        .get('https://swapi.co/')
+        .get('https://swapi.co/api/people/')
         .then(response => {
-          console.log(response);
-          setData(response.data)
+          console.log(response.data.results);
+          setData(response.data.results)
           
         })
         .catch(error => {
@@ -18,7 +18,8 @@ function CharacterData (){
     }, []);
     return(
         <div>
-
+            {data.map((item,index) =>
+             (<CharacterCard data={item} key={index}/>))} 
         </div>
 
     )
