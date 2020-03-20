@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react";
 import axios from "axios";
-import CharacterCard from "./characterCard"
+import CharacterCard from "./characterCard";
+import SearchForm from "./SearchForm";
 
 function CharacterData (){
     const [data , setData] = useState([])
@@ -18,6 +19,7 @@ function CharacterData (){
     }, []);
     return(
         <div>
+          <SearchForm data={data} />
             {data.map((item,index) =>
              (<CharacterCard data={item} key={index}/>))} 
         </div>
