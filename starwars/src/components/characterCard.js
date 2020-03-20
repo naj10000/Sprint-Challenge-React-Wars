@@ -20,7 +20,7 @@ import {
     margin: 2%;
     border: 1px solid white;
     background-color: black;
-    width: 25%;
+    width: 30%;
     color: orange;
 
     
