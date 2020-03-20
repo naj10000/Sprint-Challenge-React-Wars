@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import CharacterData from "./components/characterListData"
-import SearchForm from ".components/SearchForm"
+import SearchForm from "./components/SearchForm"
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out

@@ -10,7 +10,7 @@ export default function SearchForm(props) {
  useEffect(() => {
   const getNames = ()=>{
     axios
-      .get('')
+      .get('https://swapi.co/api/people/')
       .then(response => {
         
         const characterS  = response.data.results.filter(character=>
