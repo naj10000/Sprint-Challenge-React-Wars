@@ -8,7 +8,8 @@ import {
     CardTitle,
     CardSubtitle,
     Button,
-    Col
+    Col,
+    Input
   } from "reactstrap";
 
   const Div = styled.div `
@@ -39,7 +40,9 @@ import {
 const CharacterCard = props => {
     console.log(props)
     return(
+      
         <Div> 
+          
         <Card>
            
         <CardBody >
